@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<fieldset>
+<legend><b><h2>Personal Details</h2></b></legend>
+
+ <table>
+  <tr>
+    <td><b><h3>Upload your picture:</h3></b></td>
+    <td><input type="file" id="img" name="img" accept="image/png, image/jpeg" required></td>	
+  </tr>
+  <tr>
+    <td><b><h3>First Name:</h3></b></td>
+	<td><input type="text" name="firstname" autocomplete="on" ></br></td>
+  </tr>
+  <tr>
+    <td><b><h3>Last Name:</h3></b></td>
+	<td><input type="text" name="lastname"  autocomplete="on" ></br>
+  </tr>
+  <tr>
+    <td><b><h3>Mobile Number:</h3></b></td>
+	<td><input type="Number" id="numb" onblur="myFunction" ></br>
+  </tr>
+  <tr>
+    <td><b><h3>Email:</h3></b></td>
+	<td><input type="email" name="email" /></br></td>
+  </tr>
+
+
+
+</table>
+
+<h4>Note: onblur is implemented on mobile number</h4>
+
+<input type="Submit" value="Submit">
+
+</body>
+	<script>
+	document.getElementById("numb").onblur = function() {myFunction()};
+function myFunction() {
+
+   var x = document.getElementById("numb").value;
+  var n = x.length;
+  
+
+  if (n < 10 || n > 10) {
+    alert("Enter valid Mobile Number");}
+}
+</script>
+</html>

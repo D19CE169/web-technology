@@ -1,0 +1,17 @@
+body {
+		background-color: grey;
+	}
+.apple  {
+font-family: cursive;
+color: red;
+}
+.banana {
+color: yellow;
+ font-family: serif;
+ }
+ .c1{
+ 	background-color: red;
+ }
+ .c2{
+ 	background-color: cyan;
+ }
